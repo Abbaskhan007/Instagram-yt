@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 @layer components {
-    .navbtn {
-        @apply hidden h-6 md:inline-flex cursor-pointer hover:scale-125 duration-150 transition-all ease-out
-    }
+  .navbtn {
+    @apply hidden h-6 md:inline-flex cursor-pointer hover:scale-125 duration-150 transition-all ease-out;
+  }
+  .postbtn {
+      @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out
+  }
 }
