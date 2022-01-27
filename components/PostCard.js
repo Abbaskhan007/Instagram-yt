@@ -108,7 +108,7 @@ export default function PostCard({ id, username, img, userImg, caption }) {
       </p>
       <div className="h-20 ml-10 overflow-y-scroll scrollbar-thin scrollbar-thumb-black ">
         {comments.map(cmt => (
-          <div className="flex flex-1 items-center mb-3 space-x-2 mr-4">
+          <div key={cmt.id} className="flex flex-1 items-center mb-3 space-x-2 mr-4">
             <img className="h-7 rounded-full" src={cmt.data().userImage} />
             <p className="flex-1">
               <span className="font-bold">{cmt.data().username}</span>
