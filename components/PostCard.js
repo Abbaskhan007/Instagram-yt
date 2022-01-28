@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   DotsHorizontalIcon,
   HeartIcon,
@@ -12,7 +12,6 @@ import {
   
 } from "@heroicons/react/solid";
 import { useSession } from "next-auth/react";
-import { useEffect } from "react/cjs/react.development";
 
 import {
   addDoc,
